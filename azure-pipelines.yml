@@ -12,7 +12,7 @@ pool:
 steps:
 - task: UseRubyVersion@0
   inputs:
-    versionSpec: '= 2.3'
+    versionSpec: '>= 2.5'
 
 - script: |
     rvm install 2.3
