@@ -14,7 +14,7 @@ steps:
   inputs:
     versionSpec: '>= 2.5'
 
-- script: install hiptest-publisher
+- script: gem install hiptest-publisher
   displayName: 'Install hiptest'
 
 - script: hiptest-publisher -c cucumber-js.conf --only=features,step_definitions --test-run-id=427919
