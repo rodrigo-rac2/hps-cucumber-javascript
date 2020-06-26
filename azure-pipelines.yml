@@ -15,8 +15,8 @@ steps:
     versionSpec: '>= 2.5'
 
 - script: |
-    rvm install 2.3
-    rvm use 2.3
+    rvm install 2.5
+    rvm use 2.5
     gem install hiptest-publisher
     "hiptest-publisher -c cucumber-js.conf --only=features,step_definitions --test-run-id=427919"
   displayName: 'Ruby install and build hiptest'
