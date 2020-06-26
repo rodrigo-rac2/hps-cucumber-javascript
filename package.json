@@ -1,6 +1,10 @@
 {
+  "scripts": {
+    "test": "node_modules/.bin/cucumber-js.cmd --format=json || node_modules/.bin/cucumber-junit.cmd --features-as-suites > junit_output.xml"
+  },
   "devDependencies": {
     "cucumber": "^1.2.2",
-    "cucumber-junit": "git+https://github.com/vincent-psarga/cucumber-junit.git"
+    "cucumber-junit": "git+https://github.com/vincent-psarga/cucumber-junit.git",
+    "cucumber-pretty": "^6.0.0"
   }
 }
