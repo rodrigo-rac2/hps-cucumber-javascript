@@ -12,7 +12,7 @@ pool:
 steps:
 - task: UseRubyVersion@0
   inputs:
-    versionSpec: '>= 2.5'
+    versionSpec: '>= 2.6'
 
 - script: gem install hiptest-publisher
   displayName: 'Install hiptest'
@@ -22,7 +22,7 @@ steps:
 
 - task: NodeTool@0
   inputs:
-    versionSpec: '8.x'
+    versionSpec: '12.x'
   displayName: 'Install Node.js'
 
 - script: |
